@@ -1,5 +1,5 @@
 //
-import styled, { css, Interpolation } from 'styled-components';
+import styled from 'styled-components';
 
 export const Gallery = styled.div`
   -webkit-column-count: ${({ columns }) => (columns ? 3 : 5)};

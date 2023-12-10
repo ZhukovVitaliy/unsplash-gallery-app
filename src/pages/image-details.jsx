@@ -1,5 +1,5 @@
 import { useLocation } from 'react-router-dom';
-import { Button, Form, CardBody } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 import * as S from './image-details.styles';

@@ -46,14 +46,14 @@ const Home = () => {
     }
   }, [page]);
 
-  useEffect(() => {
-    fetchImages();
-  }, [fetchImages]);
+  // useEffect(() => {
+  //   fetchImages();
+  // }, [fetchImages]);
 
-  const resetSerch = () => {
+  const resetSerch = useCallback(() => {
     setPage(1);
     fetchImages();
-  };
+  }, [fetchImages]);
 
   const handleSerch = e => {
     e.preventDefault();
@@ -71,7 +71,7 @@ const Home = () => {
       resetSerch();
       setTag('');
     }
-  }, []);
+  }, [resetSerch, tag]);
 
   return (
     <div className="container">
